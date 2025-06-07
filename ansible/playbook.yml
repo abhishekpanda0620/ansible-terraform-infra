@@ -1,10 +1,14 @@
-- name: Configure web server
+- name: Configure web server on Ubuntu
   hosts: web
   become: true
 
   tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
     - name: Install NGINX
-      package:
+      apt:
         name: nginx
         state: present
 

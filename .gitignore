@@ -1,8 +1,10 @@
 # Terraform
 terraform/*.tfstate
+terraform/*.tfstate
+terraform/.terraform.lock.hcl
 terraform/*.tfstate.*
-terraform/.terraform/
-terraform/terraform.tfvars       # if you’re using a vars file with secrets
+terraform/.terraform*
+terraform/terraform.tfvars       
 terraform/override.tf
 terraform/override.tf.json
 terraform/crash.log
