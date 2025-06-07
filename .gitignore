@@ -1,0 +1,23 @@
+# Terraform
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform/
+terraform/terraform.tfvars       # if you’re using a vars file with secrets
+terraform/override.tf
+terraform/override.tf.json
+terraform/crash.log
+
+# Ansible
+# Vault password files, inventories with real IPs or keys
+ansible/*.vault_pass.txt
+ansible/inventory.ini
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs and temp
+*.log
+*.tmp
